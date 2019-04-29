@@ -610,6 +610,14 @@
     position: position,
     animation: naver.maps.Animation.BOUNCE
   });
+
+  naver.maps.Event.addListener(marker, 'click', function() {
+    if (marker.getAnimation() !== null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(naver.maps.Animation.BOUNCE);
+    }
+  });
 </script>
 
 </body>
