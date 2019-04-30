@@ -124,9 +124,13 @@
                              class="img-responsive">
                     </div>
                     <div class="desc-groom">
-                        <h3>Joefrey Mahusay</h3>
+                        <h3>Ohkyun, Kim</h3>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts. Separated they live in Bookmarksgrove</p>
+                        <p>
+                          <a href="http://npay.to/9c289705db653be25370"><img src="images/naver_pay.png"></a>
+                          <a href="https://qr.kakaopay.com/281006011179086901003600"><img src="images/kakao_pay.png"></a>
+                        </p>
                     </div>
                 </div>
                 <p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -136,9 +140,13 @@
                              class="img-responsive">
                     </div>
                     <div class="desc-bride">
-                        <h3>Sheila Mahusay</h3>
+                        <h3>Jeongim, Kwon</h3>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts. Separated they live in Bookmarksgrove</p>
+                        <p>
+                          <a href="http://npay.to/cbc7cafe7b0086ae2ad1"><img src="images/naver_pay.png"></a>
+                          <a href="https://qr.kakaopay.com/281006011000040090267023"><img src="images/kakao_pay.png"></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -377,20 +385,14 @@
 <script src="js/main.js"></script>
 
 <script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    var d = new Date(2019, 5, 16, 12, 30);// Jan is 0, Dec is 11
 
-    // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
         day: d.getDate(),
+        hours: d.getHours(),
+        minutes: d.getMinutes(),
         enableUtc: false
     });
 </script>
