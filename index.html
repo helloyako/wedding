@@ -630,20 +630,14 @@
 <script src="js/main.js"></script>
 
 <script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    var d = new Date(2019, 5, 16, 12, 30);// Jan is 0, Dec is 11
 
-    // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
         day: d.getDate(),
+        hours: d.getHours(),
+        minutes: d.getMinutes(),
         enableUtc: false
     });
 </script>
