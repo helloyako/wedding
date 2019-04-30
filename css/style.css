@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center !important;
+  background-position-x: center !important;
   position: relative;
   width: 100%;
 }
