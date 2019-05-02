@@ -226,6 +226,56 @@
 		$(window).stellar();
 	};
 
+	//PhotoSwipe
+	var initGallery = function() {
+		var galleryIdList = ['#gallery-0', '#gallery-1', '#gallery-2', '#gallery-3', '#gallery-4', '#gallery-5', '#gallery-6', '#gallery-7', '#gallery-8'];
+
+		for(var i = 0; i < galleryIdList.length; i++) {
+			var galleryId = galleryIdList[i];
+			$(galleryId).on("click", function(e) {
+				e.preventDefault();
+
+				var pswpElement = document.querySelectorAll('.pswp')[0];
+
+				// build items array
+				var items = [
+					{
+						src: 'images/gallery-1.jpg',
+						w: 600,
+						h: 400
+					},
+					{
+						src: 'images/gallery-2.jpg',
+						w: 600,
+						h: 400
+					},
+					{
+						src: 'images/gallery-3.jpg',
+						w: 600,
+						h: 400
+					},
+					{
+						src: 'images/gallery-4.jpg',
+						w: 600,
+						h: 400
+					}
+				];
+
+				// define options (if needed)
+				var options = {
+					// optionName: 'option value'
+					// for example:
+					index: 0 // start at first slide
+				};
+
+				// Initializes and opens PhotoSwipe
+				var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+				gallery.init();
+			});
+
+		}
+	};
+
 	
 	$(function(){
 		// mobileMenuOutsideClick();
@@ -240,6 +290,7 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+		initGallery();
 	});
 
 

@@ -60,3 +60,5 @@ http://vincentloy.github.io/simplyCountdown.js/
 Demo Images:
 http://unsplash.com
 
+Phoso Swipe
+https://photoswipe.com
