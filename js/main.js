@@ -182,6 +182,19 @@
 	
 	};
 
+	var goToMap = function() {
+
+		$('.js-gomap').on('click', function(event){
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $("#map").offset().top
+			}, 500, 'easeInOutExpo');
+
+			return false;
+		});
+	};
+
 
 	// Loading page
 	var loaderPage = function() {
@@ -223,6 +236,7 @@
 		dropdown();
 		testimonialCarousel();
 		goToTop();
+		goToMap();
 		loaderPage();
 		counter();
 		counterWayPoint();
