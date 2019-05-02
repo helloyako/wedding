@@ -1210,7 +1210,7 @@ form label {
   text-align: center;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span {
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -1226,12 +1226,12 @@ form label {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide figure img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
