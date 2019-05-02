@@ -685,7 +685,19 @@
         e.preventDefault();
 
         map.setCenter(position);
+		buttons.fadeOut();
     });
+	var buttons = $("#map").find(".buttons");
+	buttons.hide();
+	var eventList = ['mouseup', 'touchup', 'dragend', 'pinchend', 'click', 'dblclick', 'tap', 'longtap', 'twofingertap', 'doubletap'];
+	eventList.forEach(function(eventName) {
+		naver.maps.Event.addListener(map, eventName, function(e) {
+        	if (buttons.is(':visible')) {
+            	return;
+        	}
+        	buttons.fadeIn();
+    	});
+	});
 </script>
 
 </body>
