@@ -772,8 +772,8 @@
 
     $("#to-center").on("click", function(e) {
         e.preventDefault();
-        map.setZoom(12, true);
         map.setCenter(position);
+        map.setZoom(12, true);
 		buttons.fadeOut();
     });
 	var buttons = $("#map").find(".buttons");
