@@ -655,6 +655,7 @@
 </script>
 
 <script>
+    var HOME_PATH = window.HOME_PATH || '.';
     var position = new naver.maps.LatLng(37.559473, 127.041575);
     var mapOptions = {
         center: position,
@@ -666,6 +667,12 @@
     var marker = new naver.maps.Marker({
         map: map,
         position: position,
+        icon: {
+            url: HOME_PATH +'/images/heart_marker.png',
+            size: new naver.maps.Size(50, 69),
+            origin: new naver.maps.Point(0, 0),
+            anchor: new naver.maps.Point(25, 26)
+        }
         animation: naver.maps.Animation.BOUNCE
     });
 
