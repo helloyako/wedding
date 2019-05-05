@@ -555,9 +555,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
-    width: 60px;
-    height: 60px;
-    margin-left: -20px !important;
+    width: 70px;
+    height: 70px;
+    margin-left: -25px !important;
   }
 }
 .timeline > li.timeline-inverted > .timeline-panel {
