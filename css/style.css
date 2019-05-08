@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event,
 .fh5co-bg {
   background-size: cover;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -236,10 +236,10 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left;
   position: relative;
-  background: rgb(169,241,223);
+ /* background: rgb(169,241,223);
   background: -moz-linear-gradient(180deg, rgba(169,241,223,1) 0%, rgba(255,187,187,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(169,241,223,1) 0%, rgba(255,187,187,1) 100%);
-  background: linear-gradient(180deg, rgba(169,241,223,1) 0%, rgba(255,187,187,1) 100%);
+  background: linear-gradient(180deg, rgba(169,241,223,1) 0%, rgba(255,187,187,1) 100%);*/
   /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a9f1df",endColorstr="#ffbbbb",GradientType=1);*/
 }
 
@@ -378,11 +378,17 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  letter-spacing: 4px;
   font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-event .fh5co-heading span {
+  font-size: 13px;  
+  letter-spacing: 2px;
+}
 }
 #fh5co-counter .overlay,
 #fh5co-event .overlay {
@@ -1221,7 +1227,7 @@ form label {
   font-weight: 700;
   display: block;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
+#fh5co-testimonial .wrap-testimony .testimony-slide span .bio {
   color: #FF6D70;
   font-weight: 300;
 }
