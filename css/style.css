@@ -1872,4 +1872,14 @@ form label {
   vertical-align: text-bottom;
 }
 
+.naver-pay {
+  width: 64px;
+  height: 25px;
+}
+
+.kakao-pay {
+  width: 60px;
+  height: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */
