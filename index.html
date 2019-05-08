@@ -652,7 +652,7 @@
     });
     var buttons = $("#map").find(".buttons");
     buttons.hide();
-    var eventList = ['mouseup', 'touchup', 'dragend', 'pinchend', 'click', 'dblclick', 'tap', 'longtap', 'twofingertap', 'doubletap'];
+    var eventList = ['mouseup', 'touchup', 'dragend', 'pinchend', 'click', 'dblclick', 'tap', 'longtap', 'twofingertap', 'doubletap', 'zoom_changed'];
     eventList.forEach(function (eventName) {
         naver.maps.Event.addListener(map, eventName, function (e) {
             if (buttons.is(':visible')) {
