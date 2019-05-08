@@ -447,6 +447,10 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 30px;
 }
 
+#fh5co-event .event-wrap .right-border {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 #fh5co-counter {
   height: 600px;
 }
