@@ -1858,30 +1858,32 @@ form label {
 }
 
 .fh5co-direction {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-  width: 100%
+  text-align:center;
+  font-size:18px;
+  height:500px;
 }
-.fh5co-direction .overlay {
-  z-index: 0;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-.fh5co-direction > .fh5co-container {
-  position: relative;
-  z-index: 10;
-}
+
 .fh5co-direction h3 {
-  font-size: 18px;
+  font-size: 24px;
   margin-left: 10px;
-  margin-top : 20px;
+  color: #FF6D70;
+}
+.fh5co-direction h4 {
+  font-size: 20px;
+  font-weight: 500;
   color: #828282;
+}
+
+@media screen and (max-width: 768px) {
+ .fh5co-direction {
+    font-size:16px;
+  }
+ .fh5co-direction h3{
+ font-size: 20px;
+ }
+ .fh5co-direction h4{
+ font-size: 18px;
+ }
 }
 
 .js .animate-box {
