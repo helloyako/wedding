@@ -610,68 +610,6 @@
 <!-- Main -->
 <script src="js/main.js"></script>
 
-<script>
-    var d = new Date(2019, 5, 16, 12, 30);// Jan is 0, Dec is 11
-
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        hours: d.getHours(),
-        minutes: d.getMinutes(),
-        enableUtc: false
-    });
-</script>
-
-<script>
-    var HOME_PATH = window.HOME_PATH || '.';
-    var position = new naver.maps.LatLng(37.559473, 127.041575);
-    var mapOptions = {
-        center: position,
-        zoom: 12,
-        minZoom: 7,
-        maxZoom: 14
-    };
-
-    var map = new naver.maps.Map('map', mapOptions);
-
-    var marker = new naver.maps.Marker({
-        map: map,
-        position: position,
-        icon: {
-            url: HOME_PATH + '/images/heart_marker_coral.png',
-            scaledSize: new naver.maps.Size(50, 69)
-        },
-        animation: naver.maps.Animation.BOUNCE
-    });
-
-    naver.maps.Event.addListener(marker, 'click', function () {
-        if (marker.getAnimation() !== null) {
-            marker.setAnimation(null);
-        } else {
-            marker.setAnimation(naver.maps.Animation.BOUNCE);
-        }
-    });
-
-    $("#to-center").on("click", function (e) {
-        e.preventDefault();
-        map.setCenter(position);
-        map.setZoom(12, true);
-        buttons.fadeOut();
-    });
-    var buttons = $("#map").find(".buttons");
-    buttons.hide();
-    var eventList = ['mouseup', 'touchup', 'dragend', 'pinchend', 'click', 'dblclick', 'tap', 'longtap', 'twofingertap', 'doubletap', 'zoom_changed'];
-    eventList.forEach(function (eventName) {
-        naver.maps.Event.addListener(map, eventName, function (e) {
-            if (buttons.is(':visible')) {
-                return;
-            }
-            buttons.fadeIn();
-        });
-    });
-</script>
-
 </body>
 </html>
 
