@@ -296,6 +296,7 @@
 				// Initializes and opens PhotoSwipe
 				var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 				gallery.init();
+				gaEvent('gallery', 'click', e.currentTarget.id);
 			});
 
 		}
@@ -336,6 +337,7 @@
 			map.setCenter(position);
 			map.setZoom(12, true);
 			buttons.fadeOut();
+			gaEvent('map', 'click', 'center_button_hide');
 		});
 		var buttons = $("#map").find(".buttons");
 		buttons.hide();
@@ -346,6 +348,7 @@
 					return;
 				}
 				buttons.fadeIn();
+				gaEvent('map', eventName, 'center_button_show');
 			});
 		});
 	};
@@ -362,6 +365,14 @@
 			enableUtc: false
 		});
 	};
+
+	function gaEvent(category, action, label) {
+		ga('send', 'event', {
+			eventCategory: category,
+			eventAction: action,
+			eventLabel: label
+		});
+	}
 
 	
 	$(function(){

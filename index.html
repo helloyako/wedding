@@ -105,6 +105,14 @@
             google_ad_client: "ca-pub-5865236312302245",
             enable_page_level_ads: true
         });
+        function onClickGAEvent(category, action, label) {
+            console.log(category + action + label);
+            ga('send', 'event', {
+                eventCategory: category,
+                eventAction: action,
+                eventLabel: label
+            });
+        }
     </script>
 
 </head>
@@ -487,14 +495,14 @@
                                     <h3>🤵 신랑에게 축의하기 </h3>
                                     <div class="event-col">
                                         <span>
-                                            <a href="http://npay.to/9c289705db653be25370">
+                                            <a href="http://npay.to/9c289705db653be25370" onclick="onClickGAEvent('pay','click','yako-naver');">
                                                 <img class="naver-pay" src="images/naver_pay.png" alt="오균 네이버페이">
                                             </a>
                                         </span>
                                     </div>
                                     <div class="event-col">
                                         <span>
-                                            <a href="https://qr.kakaopay.com/281006011179086901003600">
+                                            <a href="https://qr.kakaopay.com/281006011179086901003600" onclick="onClickGAEvent('pay','click','yako-kakao');">
                                                 <img class="kakao-pay" src="images/kakao_pay.png" alt="오균 카카오페이">
                                             </a>
                                         </span>
@@ -506,14 +514,14 @@
                                     <h3>👰 신부에게 축의하기 </h3>
                                     <div class="event-col">
                                         <span>
-                                            <a href="http://npay.to/cbc7cafe7b0086ae2ad1">
+                                            <a href="http://npay.to/cbc7cafe7b0086ae2ad1" onclick="onClickGAEvent('pay','click','imee-naver');">
                                                 <img class="naver-pay" src="images/naver_pay.png" alt="정임 네이버페이">
                                             </a>
                                         </span>
                                     </div>
                                     <div class="event-col">
                                         <span>
-                                            <a href="https://qr.kakaopay.com/281006011000040090267023">
+                                            <a href="https://qr.kakaopay.com/281006011000040090267023" onclick="onClickGAEvent('pay','click','imee-kakao');">
                                                 <img class="kakao-pay" src="images/kakao_pay.png" alt="정임 카카오페이">
                                             </a>
                                         </span>
