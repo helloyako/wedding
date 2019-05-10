@@ -1019,6 +1019,7 @@ form label {
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
+#fh5co-direction,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
@@ -1032,6 +1033,7 @@ form label {
   #fh5co-couple-story,
   #fh5co-couple,
   #fh5co-gallery,
+  #fh5co-direction,
   .fh5co-section {
     padding: 3em 0;
   }
@@ -1857,31 +1859,31 @@ form label {
   background: url(../images/loader.gif) center no-repeat #fff;
 }
 
-.fh5co-direction {
+#fh5co-direction {
   text-align:center;
   font-size:18px;
   height:500px;
 }
 
-.fh5co-direction h3 {
+#fh5co-direction h3 {
   font-size: 24px;
   margin-left: 10px;
-  color: #FF6D70;
+  color:#FF6D70;
 }
-.fh5co-direction h4 {
+#fh5co-direction h4 {
   font-size: 20px;
   font-weight: 500;
   color: #828282;
 }
 
 @media screen and (max-width: 768px) {
- .fh5co-direction {
+ #fh5co-direction {
     font-size:16px;
   }
- .fh5co-direction h3{
+ #fh5co-direction h3{
  font-size: 20px;
  }
- .fh5co-direction h4{
+ #fh5co-direction h4{
  font-size: 18px;
  }
 }
