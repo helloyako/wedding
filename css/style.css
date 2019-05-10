@@ -1011,7 +1011,7 @@ form label {
   /* words */
 }
 
-#fh5co-testimonial,
+#fh5co-special-thanks,
 #fh5co-services,
 #fh5co-started,
 #fh5co-footer,
@@ -1025,7 +1025,7 @@ form label {
   clear: both;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-testimonial,
+  #fh5co-special-thanks,
   #fh5co-services,
   #fh5co-started,
   #fh5co-footer,
@@ -1225,24 +1225,24 @@ form label {
   color: rgba(0, 0, 0, 0.4);
 }
 
-#fh5co-testimonial .wrap-testimony {
+#fh5co-special-thanks .wrap-special-thanks {
   position: relative;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide {
+#fh5co-special-thanks .wrap-special-thanks .special-thanks-slide {
   text-align: center;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide span {
+#fh5co-special-thanks .wrap-special-thanks .special-thanks-slide span {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
   display: block;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide span .bio {
+#fh5co-special-thanks .wrap-special-thanks .special-thanks-slide span .bio {
   color: #FF6D70;
   font-weight: 300;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide figure {
+#fh5co-special-thanks .wrap-special-thanks .special-thanks-slide figure {
   margin-bottom: 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -1251,7 +1251,7 @@ form label {
   width: 150px;
   height: 150px;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide figure img {
+#fh5co-special-thanks .wrap-special-thanks .special-thanks-slide figure img {
   width: 150px;
   height: 150px;
   -webkit-border-radius: 50%;
@@ -1259,7 +1259,7 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
+#fh5co-special-thanks .wrap-special-thanks .special-thanks-slide blockquote {
   border: none;
   margin: 30px auto;
   width: 50%;
@@ -1270,30 +1270,30 @@ form label {
   border-radius: 4px;
 }
 @media screen and (max-width: 992px) {
-  #fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
+  #fh5co-special-thanks .wrap-special-thanks .special-thanks-slide blockquote {
     width: 100%;
   }
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
+#fh5co-special-thanks .wrap-special-thanks .special-thanks-slide blockquote p {
   font-style: italic;
   color: #8f989f;
   font-size: 20px;
   line-height: 1.6em;
 }
-#fh5co-testimonial .wrap-testimony .testimony-slide.active {
+#fh5co-special-thanks .wrap-special-thanks .special-thanks-slide.active {
   display: block;
 }
-#fh5co-testimonial .wrap-testimony .arrow-thumb {
+#fh5co-special-thanks .wrap-special-thanks .arrow-thumb {
   position: absolute;
   top: 40%;
   display: block;
   width: 100%;
 }
-#fh5co-testimonial .wrap-testimony .arrow-thumb a {
+#fh5co-special-thanks .wrap-special-thanks .arrow-thumb a {
   font-size: 32px;
   color: #dadada;
 }
-#fh5co-testimonial .wrap-testimony .arrow-thumb a:hover, #fh5co-testimonial .wrap-testimony .arrow-thumb a:focus, #fh5co-testimonial .wrap-testimony .arrow-thumb a:active {
+#fh5co-special-thanks .wrap-special-thanks .arrow-thumb a:hover, #fh5co-special-thanks .wrap-special-thanks .arrow-thumb a:focus, #fh5co-special-thanks .wrap-special-thanks .arrow-thumb a:active {
   text-decoration: none;
 }
 
