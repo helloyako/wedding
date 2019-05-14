@@ -1879,6 +1879,7 @@ form label {
 @media screen and (max-width: 768px) {
  #fh5co-direction {
     font-size:16px;
+    height:360px;
   }
  #fh5co-direction h3{
  font-size: 20px;
