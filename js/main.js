@@ -374,6 +374,27 @@
 		});
 	};
 
+	var addMagnificPopup = function() {
+		$(".timeline-badge").on("click", function (e) {
+			e.preventDefault();
+
+			var imageUrl = $(this).css('background-image');
+			imageUrl = imageUrl.replace('url(','').replace(')','').replace(/\"/gi, "");
+
+			$.magnificPopup.open({
+				items: {
+					src: imageUrl
+				},
+				type: 'image',
+				closeOnContentClick: true
+			}, 0);
+
+			gaEvent('timeline', 'click', imageUrl);
+
+			return false;
+		});
+	};
+
 	function gaEvent(category, action, label) {
 		ga('send', 'event', {
 			eventCategory: category,
@@ -400,6 +421,7 @@
 		initGallery();
 		initNaverMap();
 		initCountDown();
+		addMagnificPopup();
 	});
 
 
