@@ -190,6 +190,8 @@
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
 			}, 500, 'easeInOutExpo');
+
+			gaEvent('common', 'click', 'go_to_top');
 			
 			return false;
 		});
@@ -215,6 +217,8 @@
 			$('html, body').animate({
 				scrollTop: $("#map").offset().top
 			}, 500, 'easeInOutExpo');
+
+			gaEvent('map', 'click', 'go_to_map');
 
 			return false;
 		});
@@ -297,6 +301,8 @@
 				var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 				gallery.init();
 				gaEvent('gallery', 'click', e.currentTarget.id);
+
+				return false;
 			});
 
 		}
@@ -330,6 +336,8 @@
 			} else {
 				marker.setAnimation(naver.maps.Animation.BOUNCE);
 			}
+
+			gaEvent('map', 'click', 'pin_animation');
 		});
 
 		$("#to-center").on("click", function (e) {

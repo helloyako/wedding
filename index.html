@@ -118,10 +118,10 @@
             google_ad_client: "ca-pub-5865236312302245",
             enable_page_level_ads: true
         });
-        function onClickGAEvent(category, action, label) {
+        function onClickGAEvent(category, label) {
             ga('send', 'event', {
                 eventCategory: category,
-                eventAction: action,
+                eventAction: 'click',
                 eventLabel: label
             });
         }
@@ -172,10 +172,10 @@
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts. Separated they live in Bookmarksgrove
                         <ul class="fh5co-social-icons">
-                            <li><a href="https://www.instagram.com/helloyako/"><i class="icon-instagram"></i></a></li>
-                            <li><a href="https://www.facebook.com/helloyako"><i class="icon-facebook"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/helloyako/"><i class="icon-linkedin"></i></a></li>
-                            <li><a href="https://github.com/helloyako"><i class="icon-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/helloyako/" onclick="onClickGAEvent('pay','yako-insta');"><i class="icon-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/helloyako" onclick="onClickGAEvent('pay','yako-facebook');"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/helloyako/" onclick="onClickGAEvent('pay','yako-linkedin');"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="https://github.com/helloyako" onclick="onClickGAEvent('pay','yako-github');"><i class="icon-github"></i></a></li>
                         </ul>
                     </p><br>
                     </div>
@@ -191,10 +191,10 @@
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts. Separated they live in Bookmarksgrove
                         <ul class="fh5co-social-icons">
-                            <li><a href="https://www.instagram.com/imee.ya/"><i class="icon-instagram"></i></a></li>
-                            <li><a href="https://www.facebook.com/imee.kwon"><i class="icon-facebook"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/정임-권-12bb57155/"><i class="icon-linkedin"></i></a></li>
-                            <li><a href="https://github.com/imeeeya"><i class="icon-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/imee.ya/" onclick="onClickGAEvent('pay','imee-insta');"><i class="icon-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/imee.kwon" onclick="onClickGAEvent('pay','imee-facebook');"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/%EC%A0%95%EC%9E%84-%EA%B6%8C-12bb57155/" onclick="onClickGAEvent('pay','imee-linkedin');"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="https://github.com/imeeeya" onclick="onClickGAEvent('pay','imee-github');"><i class="icon-github"></i></a></li>
                         </ul>
                     </p>
                     </div>
@@ -521,14 +521,14 @@
                                     <h3>🤵 신랑에게 축의하기 </h3>
                                     <div class="event-col">
                                         <span>
-                                            <a href="http://npay.to/9c289705db653be25370" onclick="onClickGAEvent('pay','click','yako-naver');">
+                                            <a href="http://npay.to/9c289705db653be25370" onclick="onClickGAEvent('pay','yako-naver');">
                                                 <img class="naver-pay" src="images/naver_pay.png" alt="오균 네이버페이">
                                             </a>
                                         </span>
                                     </div>
                                     <div class="event-col">
                                         <span>
-                                            <a href="https://qr.kakaopay.com/281006011179086901003600" onclick="onClickGAEvent('pay','click','yako-kakao');">
+                                            <a href="https://qr.kakaopay.com/281006011179086901003600" onclick="onClickGAEvent('pay','yako-kakao');">
                                                 <img class="kakao-pay" src="images/kakao_pay.png" alt="오균 카카오페이">
                                             </a>
                                         </span>
@@ -540,14 +540,14 @@
                                     <h3>👰 신부에게 축의하기 </h3>
                                     <div class="event-col">
                                         <span>
-                                            <a href="http://npay.to/cbc7cafe7b0086ae2ad1" onclick="onClickGAEvent('pay','click','imee-naver');">
+                                            <a href="http://npay.to/cbc7cafe7b0086ae2ad1" onclick="onClickGAEvent('pay','imee-naver');">
                                                 <img class="naver-pay" src="images/naver_pay.png" alt="정임 네이버페이">
                                             </a>
                                         </span>
                                     </div>
                                     <div class="event-col">
                                         <span>
-                                            <a href="https://qr.kakaopay.com/281006011000040090267023" onclick="onClickGAEvent('pay','click','imee-kakao');">
+                                            <a href="https://qr.kakaopay.com/281006011000040090267023" onclick="onClickGAEvent('pay','imee-kakao');">
                                                 <img class="kakao-pay" src="images/kakao_pay.png" alt="정임 카카오페이">
                                             </a>
                                         </span>
