@@ -387,10 +387,13 @@
 			var imageUrl = $(this).css('background-image');
 			imageUrl = imageUrl.replace('url(','').replace(')','').replace(/\"/gi, "");
 
+			var width = $(this).attr('data-width');
+			var height = $(this).attr('data-height');
+
 			var items = [{
 				src: imageUrl,
-				w: 600,
-				h: 400
+				w: width,
+				h: height
 			}];
 
 
