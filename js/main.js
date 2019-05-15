@@ -264,8 +264,6 @@
 			$(galleryId).on("click", function(e) {
 				e.preventDefault();
 
-				var pswpElement = document.querySelectorAll('.pswp')[0];
-
 				// build items array
 				var items = [
 					{
@@ -290,16 +288,8 @@
 					}
 				];
 
-				// define options (if needed)
-				var options = {
-					// optionName: 'option value'
-					// for example:
-					index: 0 // start at first slide
-				};
+				openPhotoSwipeView(items);
 
-				// Initializes and opens PhotoSwipe
-				var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-				gallery.init();
 				gaEvent('gallery', 'click', e.currentTarget.id);
 
 				return false;
@@ -307,6 +297,22 @@
 
 		}
 	};
+
+	function openPhotoSwipeView(items) {
+		var pswpElement = document.querySelectorAll('.pswp')[0];
+
+		// define options (if needed)
+		var options = {
+			// optionName: 'option value'
+			// for example:
+			index: 0 // start at first slide
+		};
+
+		// Initializes and opens PhotoSwipe
+		var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+		gallery.init();
+
+	}
 
 	var initNaverMap = function() {
 		var HOME_PATH = window.HOME_PATH || '.';
@@ -374,20 +380,21 @@
 		});
 	};
 
-	var addMagnificPopup = function() {
+	var addTimelinePopupEvent = function() {
 		$(".timeline-badge").on("click", function (e) {
 			e.preventDefault();
 
 			var imageUrl = $(this).css('background-image');
 			imageUrl = imageUrl.replace('url(','').replace(')','').replace(/\"/gi, "");
 
-			$.magnificPopup.open({
-				items: {
-					src: imageUrl
-				},
-				type: 'image',
-				closeOnContentClick: true
-			}, 0);
+			var items = [{
+				src: imageUrl,
+				w: 600,
+				h: 400
+			}];
+
+
+			openPhotoSwipeView(items);
 
 			gaEvent('timeline', 'click', imageUrl);
 
@@ -421,7 +428,7 @@
 		initGallery();
 		initNaverMap();
 		initCountDown();
-		addMagnificPopup();
+		addTimelinePopupEvent();
 	});
 
 
