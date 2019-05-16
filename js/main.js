@@ -267,25 +267,36 @@
 				// build items array
 				var items = [
 					{
-						src: 'images/gallery-1.jpg',
+						src: 'images/wedding-0.jpg',
+						w: 1200,
+						h: 800
+					},
+					{
+						src: 'images/wedding-1.jpg',
 						w: 600,
 						h: 400
 					},
 					{
-						src: 'images/gallery-2.jpg',
+						src: 'images/wedding-2.jpg',
 						w: 600,
 						h: 400
 					},
 					{
-						src: 'images/gallery-3.jpg',
-						w: 600,
-						h: 400
+						src: 'images/wedding-3.jpg',
+						w: 400,
+						h: 600
 					},
 					{
-						src: 'images/gallery-4.jpg',
-						w: 600,
-						h: 400
-					}
+                    	src: 'images/wedding-4.jpg',
+                    	w: 600,
+                    	h: 400
+                    					},
+                    {
+                        src: 'images/wedding-5.jpg',
+                         w: 600,
+                         h: 400
+                     }
+
 				];
 
 				openPhotoSwipeView(items);
