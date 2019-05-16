@@ -267,32 +267,32 @@
 				// build items array
 				var items = [
 					{
-						src: 'images/wedding_0.jpg',
+						src: 'images/wedding/wedding_0.jpg',
 						w: 1280,
 						h: 853
 					},
 					{
-						src: 'images/wedding_1.jpg',
+						src: 'images/wedding/wedding_1.jpg',
 						w: 1280,
 						h: 853
 					},
 					{
-						src: 'images/wedding_2.jpg',
+						src: 'images/wedding/wedding_2.jpg',
 						w: 1280,
 						h: 853
 					},
 					{
-						src: 'images/wedding_3.jpg',
+						src: 'images/wedding/wedding_3.jpg',
 						w: 853,
 						h: 1280
 					},
 					{
-                    	src: 'images/wedding_4.jpg',
+                    	src: 'images/wedding/wedding_4.jpg',
                     	w: 1280,
                     	h: 853
                     					},
                     {
-                        src: 'images/wedding_5.jpg',
+                        src: 'images/wedding/wedding_5.jpg',
                          w: 1280,
                          h: 853
                      }
