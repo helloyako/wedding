@@ -414,8 +414,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  border: 2.2px solid rgba(255, 109, 112, 0.7);
+  background: rgba(50, 50, 50, 0.1);
   padding: 30px;
   width: 100%;
   float: left;
@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap h3 {
   font-size: 20px;
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 109, 112, 0.6);
   display: block;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -1898,13 +1898,25 @@ form label {
 }
 
 .naver-pay {
-  width: 64px;
-  height: 25px;
+  width: 80px;
+  height: 33px;
 }
 
 .kakao-pay {
-  width: 60px;
-  height: 25px;
+  width: 80px;
+  height: 33px;
 }
+
+@media screen and (max-width: 768px) {
+ .naver-pay {
+   width: 60px;
+   height: 25px;
+ }
+
+ .kakao-pay {
+   width: 60px;
+   height: 25px;
+ }
+  }
 
 /*# sourceMappingURL=style.css.map */
