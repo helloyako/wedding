@@ -561,7 +561,7 @@
 	};
 
 	var addTimelinePopupEvent = function() {
-		$(".timeline-badge").on("click", function (e) {
+		$(".photo-viewer").on("click", function (e) {
 			e.preventDefault();
 
 			var image = $(this).attr('data-image');
@@ -580,7 +580,7 @@
 			var split = image.split("/");
 			var fileName = split[split.length - 1];
 
-			gaEvent('timeline', 'click', fileName);
+			gaEvent('photoviewer', 'click', fileName);
 
 			return false;
 		});
