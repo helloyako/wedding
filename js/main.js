@@ -257,47 +257,216 @@
 
 	//PhotoSwipe
 	var initGallery = function() {
-		var galleryIdList = ['#gallery-0', '#gallery-1', '#gallery-2', '#gallery-3', '#gallery-4', '#gallery-5', '#gallery-6', '#gallery-7', '#gallery-8'];
+		var gallery0 = {
+			"#gallery-0": [
+				{
+					src: 'images/wedding/wedding_0.jpg',
+					w: 1280,
+					h: 853
+				},
+				{
+					src: 'images/wedding/wedding_1.jpg',
+					w: 1280,
+					h: 853
+				},
+				{
+					src: 'images/wedding/wedding_2.jpg',
+					w: 1280,
+					h: 853
+				},
+				{
+					src: 'images/wedding/wedding_3.jpg',
+					w: 853,
+					h: 1280
+				},
+				{
+					src: 'images/wedding/wedding_4.jpg',
+					w: 1280,
+					h: 853
+				},
+				{
+					src: 'images/wedding/wedding_5.jpg',
+					w: 1280,
+					h: 853
+				}
+			]
+		};
 
-		for(var i = 0; i < galleryIdList.length; i++) {
-			var galleryId = galleryIdList[i];
-			$(galleryId).on("click", function(e) {
+		var gallery1 = {
+			"#gallery-1": [
+				{
+					src: 'images/laos/laos_2.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/laos/laos_3.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/laos/laos_4.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/laos/laos_5.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/laos/laos_6.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/laos/laos_7.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/laos/laos_8.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/laos/laos_9.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/laos/laos_10.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/laos/laos_11.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/laos/laos_12.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/laos/laos_13.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/laos/laos_14.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/laos/laos_15.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/laos/laos_16.jpg',
+					w: 1478,
+					h: 1108
+				}
+			]
+		};
+
+		var gallery2 = {
+			"#gallery-2": [
+				{
+					src: 'images/vv/vv_1.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_2.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_3.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_4.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_5.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_6.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_7.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_8.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_9.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_10.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_11.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/vv/vv_12.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_13.jpg',
+					w: 1109,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_14.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_15.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_16.jpg',
+					w: 2048,
+					h: 1969
+				}
+			]
+		};
+
+		var galleryList = [gallery0, gallery1, gallery2];
+
+		for(var i = 0; i < galleryList.length; i++) {
+			var gallery = galleryList[i];
+			var galleryId = Object.keys(gallery)[0];
+			$(galleryId).on("click", {items : gallery[galleryId]}, function(e) {
 				e.preventDefault();
 
 				// build items array
-				var items = [
-					{
-						src: 'images/wedding/wedding_0.jpg',
-						w: 1280,
-						h: 853
-					},
-					{
-						src: 'images/wedding/wedding_1.jpg',
-						w: 1280,
-						h: 853
-					},
-					{
-						src: 'images/wedding/wedding_2.jpg',
-						w: 1280,
-						h: 853
-					},
-					{
-						src: 'images/wedding/wedding_3.jpg',
-						w: 853,
-						h: 1280
-					},
-					{
-                    	src: 'images/wedding/wedding_4.jpg',
-                    	w: 1280,
-                    	h: 853
-                    					},
-                    {
-                        src: 'images/wedding/wedding_5.jpg',
-                         w: 1280,
-                         h: 853
-                     }
-
-				];
+				var items = e.data.items;
 
 				openPhotoSwipeView(items);
 
