@@ -375,6 +375,161 @@
 		var gallery2 = {
 			"#gallery-2": [
 				{
+					src: 'images/fin/fin-1.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-2.jpg',
+					w: 2048,
+					h: 2019
+				},
+				{
+					src: 'images/fin/fin-3.jpg',
+					w: 2364,
+					h: 1773
+				},
+				{
+					src: 'images/fin/fin-4.jpg',
+					w: 2048,
+					h: 1994
+				},
+				{
+					src: 'images/fin/fin-5.jpg',
+					w: 1108,
+					h: 1109
+				},
+				{
+					src: 'images/fin/fin-6.jpg',
+					w: 1477,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-7.jpg',
+					w: 1773,
+					h: 2364
+				},
+				{
+					src: 'images/fin/fin-8.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/fin/fin-9.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/fin/fin-10.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/fin/fin-11.jpg',
+					w: 1108,
+					h: 1402
+				},
+				{
+					src: 'images/fin/fin-12.jpg',
+					w: 1773,
+					h: 2259
+				},
+				{
+					src: 'images/fin/fin-13.jpg',
+					w: 1773,
+					h: 1773
+				},
+				{
+					src: 'images/fin/fin-14.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-15.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-16.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-17.jpg',
+					w: 1974,
+					h: 2048
+				},
+				{
+					src: 'images/fin/fin-18.jpg',
+					w: 1936,
+					h: 1936
+				},
+				{
+					src: 'images/fin/fin-19.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/fin/fin-20.jpg',
+					w: 1108,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-21.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-22.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-23.jpg',
+					w: 2364,
+					h: 1773
+				},
+				{
+					src: 'images/fin/fin-24.jpg',
+					w: 1108,
+					h: 1108
+				},
+				{
+					src: 'images/fin/fin-25.jpg',
+					w: 1773,
+					h: 2364
+				},
+				{
+					src: 'images/fin/fin-26.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/fin/fin-27.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/fin/fin-28.jpg',
+					w: 2364,
+					h: 1773
+				},
+				{
+					src: 'images/fin/fin-29.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/fin/fin-30.jpg',
+					w: 1280,
+					h: 1280
+				}
+			]
+		};
+
+		var gallery3 = {
+			"#gallery-3": [
+				{
 					src: 'images/vv/vv_1.jpg',
 					w: 1536,
 					h: 1536
@@ -457,7 +612,177 @@
 			]
 		};
 
-		var galleryList = [gallery0, gallery1, gallery2];
+		var gallery4 = {
+			"#gallery-4": [
+				{
+					src: 'images/vv/vv_1.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_2.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_3.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_4.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_5.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_6.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_7.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_8.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_9.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_10.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_11.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/vv/vv_12.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_13.jpg',
+					w: 1109,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_14.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_15.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_16.jpg',
+					w: 2048,
+					h: 1969
+				}
+			]
+		};
+
+		var gallery5 = {
+			"#gallery-5": [
+				{
+					src: 'images/vv/vv_1.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_2.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_3.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_4.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_5.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_6.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_7.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_8.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_9.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_10.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_11.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/vv/vv_12.jpg',
+					w: 1108,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_13.jpg',
+					w: 1109,
+					h: 1478
+				},
+				{
+					src: 'images/vv/vv_14.jpg',
+					w: 1536,
+					h: 1536
+				},
+				{
+					src: 'images/vv/vv_15.jpg',
+					w: 2048,
+					h: 2048
+				},
+				{
+					src: 'images/vv/vv_16.jpg',
+					w: 2048,
+					h: 1969
+				}
+			]
+		};
+
+		var galleryList = [gallery0, gallery1, gallery2, gallery3, gallery4, gallery5];
 
 		for(var i = 0; i < galleryList.length; i++) {
 			var gallery = galleryList[i];
