@@ -564,14 +564,12 @@
 		$(".timeline-badge").on("click", function (e) {
 			e.preventDefault();
 
-			var imageUrl = $(this).css('background-image');
-			imageUrl = imageUrl.replace('url(','').replace(')','').replace(/\"/gi, "");
-
+			var image = $(this).attr('data-image');
 			var width = $(this).attr('data-width');
 			var height = $(this).attr('data-height');
 
 			var items = [{
-				src: imageUrl,
+				src: image,
 				w: width,
 				h: height
 			}];
@@ -579,7 +577,7 @@
 
 			openPhotoSwipeView(items);
 
-			var split = imageUrl.split("/");
+			var split = image.split("/");
 			var fileName = split[split.length - 1];
 
 			gaEvent('timeline', 'click', fileName);
