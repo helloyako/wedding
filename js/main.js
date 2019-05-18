@@ -410,7 +410,10 @@
 
 			openPhotoSwipeView(items);
 
-			gaEvent('timeline', 'click', imageUrl);
+			var split = imageUrl.split("/");
+			var fileName = split[split.length - 1];
+
+			gaEvent('timeline', 'click', fileName);
 
 			return false;
 		});
