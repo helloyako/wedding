@@ -685,84 +685,69 @@
 		var gallery5 = {
 			"#gallery-5": [
 				{
-					src: 'images/vv/vv_1.jpg',
-					w: 1536,
-					h: 1536
+					src: 'images/hk/hk_1.jpg',
+					w: 960,
+					h: 1117
 				},
 				{
-					src: 'images/vv/vv_2.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_3.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_4.jpg',
-					w: 1536,
-					h: 1536
-				},
-				{
-					src: 'images/vv/vv_5.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_6.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_7.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_8.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_9.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_10.jpg',
+					src: 'images/hk/hk_2.jpg',
 					w: 1108,
 					h: 1478
 				},
 				{
-					src: 'images/vv/vv_11.jpg',
+					src: 'images/hk/hk_3.jpg',
+					w: 1280,
+					h: 1280
+				},
+				{
+					src: 'images/hk/hk_3-1.jpg',
+					w: 1053,
+					h: 960
+				},
+				{
+					src: 'images/hk/hk_4.jpg',
+					w: 960,
+					h: 1185
+				},
+				{
+					src: 'images/hk/hk_5.jpg',
+					w: 960,
+					h: 1280
+				},
+				{
+					src: 'images/hk/hk_6.jpg',
+					w: 960,
+					h: 1280
+				},
+				{
+					src: 'images/hk/hk_7.jpg',
+					w: 1280,
+					h: 960
+				},
+				{
+					src: 'images/hk/hk_8.jpg',
+					w: 960,
+					h: 1200
+				},
+				{
+					src: 'images/hk/hk_9.jpg',
+					w: 1280,
+					h: 1280
+				},
+				{
+					src: 'images/hk/hk_10.jpg',
 					w: 1478,
 					h: 1108
 				},
 				{
-					src: 'images/vv/vv_12.jpg',
+					src: 'images/hk/hk_11.jpg',
+					w: 1280,
+					h: 1280
+				},
+				{
+					src: 'images/hk/hk_12.jpg',
 					w: 1108,
 					h: 1478
-				},
-				{
-					src: 'images/vv/vv_13.jpg',
-					w: 1109,
-					h: 1478
-				},
-				{
-					src: 'images/vv/vv_14.jpg',
-					w: 1536,
-					h: 1536
-				},
-				{
-					src: 'images/vv/vv_15.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_16.jpg',
-					w: 2048,
-					h: 1969
 				}
 			]
 		};
