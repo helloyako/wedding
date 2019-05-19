@@ -12,7 +12,7 @@
 * ======================================================= */
 body {
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
@@ -65,7 +65,7 @@ p {
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 20px 0;
 }
 
@@ -374,20 +374,20 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .fh5co-heading h2,
 #fh5co-event .fh5co-heading h2 {
-  color: #fff;
+  color: #FF6D70;
 }
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   font-size: 18px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   #fh5co-event .fh5co-heading span {
-  font-size: 13px;  
-  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 }
 #fh5co-counter .overlay,
@@ -1670,9 +1670,9 @@ form label {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Noto Sans KR", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -1862,7 +1862,7 @@ form label {
 #fh5co-direction {
   text-align:center;
   font-size:18px;
-  height:500px;
+  height:550px;
 }
 
 #fh5co-direction h3 {
@@ -1872,14 +1872,14 @@ form label {
 }
 #fh5co-direction h4 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   color: #828282;
 }
 
 @media screen and (max-width: 768px) {
  #fh5co-direction {
     font-size:16px;
-    height:360px;
+    height:400px;
   }
  #fh5co-direction h3{
  font-size: 20px;
