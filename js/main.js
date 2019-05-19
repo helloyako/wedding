@@ -285,11 +285,6 @@
 					h: 853
 				},
 				{
-					src: 'images/wedding/wedding_5.jpg',
-					w: 1280,
-					h: 853
-				},
-				{
 					src: 'images/wedding/wedding_6.jpg',
 					w: 2000,
 					h: 1334
@@ -313,6 +308,11 @@
 					src: 'images/wedding/wedding_10.jpg',
 					w: 2000,
 					h: 1334
+				},
+				{
+					src: 'images/wedding/wedding_5.jpg',
+					w: 1280,
+					h: 853
 				}
 			]
 		};
