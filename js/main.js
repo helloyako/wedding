@@ -258,7 +258,7 @@
 	//PhotoSwipe
 	var initGallery = function() {
 		var gallery0 = {
-			"#gallery-0": [
+			"#wedding-gallery": [
 				{
 					src: 'images/wedding/wedding_0.jpg',
 					w: 1280,
@@ -288,12 +288,37 @@
 					src: 'images/wedding/wedding_5.jpg',
 					w: 1280,
 					h: 853
+				},
+				{
+					src: 'images/wedding/wedding_6.jpg',
+					w: 2000,
+					h: 1334
+				},
+				{
+					src: 'images/wedding/wedding_7.jpg',
+					w: 2000,
+					h: 1334
+				},
+				{
+					src: 'images/wedding/wedding_8.jpg',
+					w: 2000,
+					h: 1334
+				},
+				{
+					src: 'images/wedding/wedding_9.jpg',
+					w: 2000,
+					h: 1334
+				},
+				{
+					src: 'images/wedding/wedding_10.jpg',
+					w: 2000,
+					h: 1334
 				}
 			]
 		};
 
 		var gallery1 = {
-			"#gallery-1": [
+			"#laos-gallery": [
 				{
 					src: 'images/laos/laos_2.jpg',
 					w: 1108,
@@ -373,7 +398,7 @@
 		};
 
 		var gallery2 = {
-			"#gallery-2": [
+			"#fin-gallery": [
 				{
 					src: 'images/fin/fin-1.jpg',
 					w: 1478,
@@ -528,7 +553,7 @@
 		};
 
 		var gallery3 = {
-			"#gallery-3": [
+			"#vv-gallery": [
 				{
 					src: 'images/vv/vv_1.jpg',
 					w: 1536,
@@ -613,7 +638,7 @@
 		};
 
 		var gallery4 = {
-			"#gallery-4": [
+			"#tw-gallery": [
 				{
 					src: 'images/tw/tw_1.jpg',
 					w: 1528,
@@ -683,7 +708,7 @@
 		};
 
 		var gallery5 = {
-			"#gallery-5": [
+			"#hk-gallery": [
 				{
 					src: 'images/hk/hk_1.jpg',
 					w: 960,
