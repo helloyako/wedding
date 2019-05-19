@@ -615,84 +615,69 @@
 		var gallery4 = {
 			"#gallery-4": [
 				{
-					src: 'images/vv/vv_1.jpg',
-					w: 1536,
-					h: 1536
+					src: 'images/tw/tw_1.jpg',
+					w: 1528,
+					h: 994
 				},
 				{
-					src: 'images/vv/vv_2.jpg',
-					w: 2048,
-					h: 2048
+					src: 'images/tw/tw_2.jpg',
+					w: 1478,
+					h: 1012
 				},
 				{
-					src: 'images/vv/vv_3.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_4.jpg',
-					w: 1536,
-					h: 1536
-				},
-				{
-					src: 'images/vv/vv_5.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_6.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_7.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_8.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_9.jpg',
-					w: 2048,
-					h: 2048
-				},
-				{
-					src: 'images/vv/vv_10.jpg',
-					w: 1108,
-					h: 1478
-				},
-				{
-					src: 'images/vv/vv_11.jpg',
+					src: 'images/tw/tw_3.jpg',
 					w: 1478,
 					h: 1108
 				},
 				{
-					src: 'images/vv/vv_12.jpg',
+					src: 'images/tw/tw_4.jpg',
+					w: 1280,
+					h: 1280
+				},
+				{
+					src: 'images/tw/tw_5.jpg',
+					w: 1280,
+					h: 960
+				},
+				{
+					src: 'images/tw/tw_6.jpg',
+					w: 1280,
+					h: 1280
+				},
+				{
+					src: 'images/tw/tw_7.jpg',
 					w: 1108,
 					h: 1478
 				},
 				{
-					src: 'images/vv/vv_13.jpg',
-					w: 1109,
-					h: 1478
+					src: 'images/tw/tw_8.jpg',
+					w: 960,
+					h: 1280
 				},
 				{
-					src: 'images/vv/vv_14.jpg',
-					w: 1536,
-					h: 1536
+					src: 'images/tw/tw_9.jpg',
+					w: 1110,
+					h: 1476
 				},
 				{
-					src: 'images/vv/vv_15.jpg',
-					w: 2048,
-					h: 2048
+					src: 'images/tw/tw_10.jpg',
+					w: 1280,
+					h: 960
 				},
 				{
-					src: 'images/vv/vv_16.jpg',
-					w: 2048,
-					h: 1969
+					src: 'images/tw/tw_11.jpg',
+					w: 1280,
+					h: 1280
+				},
+				{
+					src: 'images/tw/tw_12.jpg',
+					w: 1478,
+					h: 1108
+				},
+				{
+					src: 'images/tw/tw_13.jpg',
+					w: 1280,
+					h: 960
 				}
 			]
 		};
