@@ -1020,7 +1020,6 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 #fh5co-direction,
-#fh5co-map,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
@@ -1035,9 +1034,17 @@ form label {
   #fh5co-couple,
   #fh5co-gallery,
   #fh5co-direction,
-  #fh5co-map,
   .fh5co-section {
     padding: 3em 0;
+  }
+}
+
+#fh5co-map {
+  padding: 7em 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-map {
+    padding: 3em 0 0 0;
   }
 }
 
