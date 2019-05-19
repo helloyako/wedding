@@ -1917,6 +1917,10 @@ form label {
    width: 60px;
    height: 25px;
  }
-  }
+}
+
+.icon-center {
+  vertical-align: text-bottom
+}
 
 /*# sourceMappingURL=style.css.map */
