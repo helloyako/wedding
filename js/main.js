@@ -773,6 +773,11 @@
 					src: 'images/hk/hk_12.jpg',
 					w: 1108,
 					h: 1478
+				},
+				{
+					src: 'images/hk/hk_13.jpg',
+					w: 1500,
+					h: 1500
 				}
 			]
 		};

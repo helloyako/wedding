@@ -964,6 +964,10 @@ form label {
   animation: pulse 1s ease infinite;
 }
 
+.simply-countdown > .simply-days-section {
+  background: rgba(255, 60, 70, 0.8);
+}
+
 @media screen and (max-width: 768px) {
   .simply-countdown > .simply-section {
   display: inline-block;
