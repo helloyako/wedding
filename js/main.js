@@ -873,7 +873,8 @@
 	};
 
 	var initCountDown = function() {
-		var d = new Date(2019, 5, 16, 21, 30);// Jan is 0, Dec is 11
+		// var d = new Date(2019, 5, 16, 21, 30);// Jan is 0, Dec is 11
+		var d = new Date('Jun 16, 2019 12:30:00 GMT+09:00');
 
 		simplyCountdown('.simply-countdown-one', {
 			year: d.getFullYear(),
@@ -881,7 +882,7 @@
 			day: d.getDate(),
 			hours: d.getHours(),
 			minutes: d.getMinutes(),
-			enableUtc: true
+			enableUtc: false
 		});
 	};
 
