@@ -869,12 +869,20 @@ form label {
   .fh5co-cover .display-tc h1 {
     font-size: 40px;
   }
+
+  #fh5co-header .display-tc .just-married {
+    font-size: 60px;
+  }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
     font-size: 30px;
+  }
+
+  #fh5co-header .display-tc .just-married {
+    font-size: 50px;
   }
 }
 #fh5co-header .display-tc h2,
