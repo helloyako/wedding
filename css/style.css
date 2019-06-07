@@ -850,6 +850,9 @@ form label {
   padding: 0;
   color: white;
 }
+#fh5co-header .display-tc .just-married {
+  color: rgb(255, 60, 70);
+}
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {

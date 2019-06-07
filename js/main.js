@@ -875,13 +875,19 @@
 	var initCountDown = function() {
 		var d = new Date(2019, 5, 16, 21, 30);// Jan is 0, Dec is 11
 
+		var onEnd = function() {
+			$('.simply-countdown').hide();
+			$('.just-married').show();
+		};
+
 		simplyCountdown('.simply-countdown-one', {
 			year: d.getFullYear(),
 			month: d.getMonth() + 1,
 			day: d.getDate(),
 			hours: d.getHours(),
 			minutes: d.getMinutes(),
-			enableUtc: true
+			enableUtc: true,
+			onEnd: onEnd
 		});
 	};
 
