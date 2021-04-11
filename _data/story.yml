@@ -1,0 +1,30 @@
+description: "아무나 안들려주는 신랑신부의 연애이야기"
+stories:
+  - title: "In A Relationship"
+    date: "2017년, 8월 15일"
+    description: "광복절, 저희는 연인이 되었습니다. 팀원으로 만나 프로젝트 이후 친구가 되었고, 그러다 더 발전된 관계가 되었어요. 공휴일인 덕분에 매 주년 기념일마다 쉬는 날이 되는 행운을 누리게 되었답니다! ☺️"
+    thumbnail: "images/timeline_first_thumb.jpg"
+    originalImage: "images/timeline_first.jpg"
+    imageWidth: 1108
+    imageHeight: 1478
+  - title: "Travel Together"
+    date: "사귄날부터 쭈욱"
+    description: "성격도, 여행 취향도 잘 맞아 함께 많은 여행을 다녔어요. 사람은 사계절을 겪어봐야 한다는데, 무려 영하 30도의 핀란드부터 40도에 육박하는 라오스까지 극단적인 온도차를 함께했죠. 하나도 안힘들었어요.☺️"
+    thumbnail: "images/timeline_second_thumb.jpg"
+    originalImage: "images/timeline_second.jpg"
+    imageWidth: 1478
+    imageHeight: 1108
+  - title: "Decide to Marry"
+    date: "2018년, 12월 25일"
+    description: "두 번째 함께 맞는 크리스마스. 프로포즈와 함께 처음으로 결혼에 대한 이야기를 나누었어요. 그리고 이제까지처럼 앞으로도 서로와 함께하기를 약속했답니다.💍"
+    thumbnail: "images/timeline_third_thumb.jpg"
+    originalImage: "images/timeline_third.jpg"
+    imageWidth: 1478
+    imageHeight: 1108
+  - title: "We Are Going To"
+    date: "2019년, 6월 16일 이후"
+    description: "결혼 이후 저희는 다니던 회사를 그만두고, 휴식 겸 어학연수를 위해 아름다운 섬 몰타로 떠나기로 하였습니다. 공부가 끝난 뒤에 무얼할지는 함께 찾아가기로 하였어요. 마음 맞는 사람과 함께하는 새로운 여행! 응원해주세요 💑"
+    thumbnail: "images/timeline_fourth_thumb.jpg"
+    originalImage: "images/timeline_fourth.jpg"
+    imageWidth: 1232
+    imageHeight: 1244

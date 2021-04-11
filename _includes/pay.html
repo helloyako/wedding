@@ -1,0 +1,43 @@
+{% assign pay = site.data.pay %}
+{% if pay %}
+<div id="fh5co-event" class="fh5co-bg" style="background-image:url({{ pay.backgroundImage }});">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                <span>Our Special Things</span>
+                <h2>IF YOU NEED THIS FEATURE</h2>
+                <p>
+                    {% for description in pay.descriptions %}
+                    <span>{{ description.line }}</span><br>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="display-t">
+                <div class="display-tc">
+                    <div class="col-md-10 col-md-offset-1">
+                        {% for person in pay.people %}
+                        <div class="col-md-6 col-sm-6 text-center">
+                            <div class="event-wrap animate-box">
+                                <h3>{{ person.title }}</h3>
+                                {% for pay in person.pays %}
+                                <div class="event-col">
+                                    <span>
+                                        <a href="{{ pay.link }}" onclick="onClickGAEvent('pay','{{ pay.clickEvent }}');">
+                                            <img class="{{ pay.name }}-pay" src="{{ pay.iconImage }}" alt="{{ pay.alt }}">
+                                        </a>
+                                    </span>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

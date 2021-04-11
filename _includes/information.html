@@ -1,0 +1,59 @@
+{% assign information = site.data.information %}
+{% if information %}
+<div id="fh5co-couple" class="fh5co-section-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                <h2>Hello!</h2>
+                <h3>{{ information.when }}</h3>
+                <p> {% if site.data.invitation.map.ncpClientId %}<a href="#" class="js-gomap">{{ information.where }}</a>{% else %}{{ information.where }}{% endif %} 에서 결혼식을 올립니다. </p>
+            </div>
+        </div>
+        <div class="couple-wrap animate-box">
+            <div class="couple-half">
+                <div class="groom photo-viewer" data-image="{{ information.groom.originalImage }}" data-width="{{ information.groom.imageWidth }}" data-height="{{ information.groom.imageHeight }}">
+                    <img src="{{ information.groom.thumbnail }}" alt="groom"
+                         class="img-responsive">
+                </div>
+                <div class="desc-groom">
+                    <h3>{{ information.groom.eng }}</h3>
+                    <p><b>{{ information.groom.parents }}</b>의 든든한 아들 <b>   {{ information.groom.name }}</b>
+                    <ul class="fh5co-social-icons">
+                        {% assign isFirst = true %}
+                        {% for sns in information.groom.snses %}
+                        <li><a href="{{ sns.link }}" onclick="onClickGAEvent('sns','{{ sns.clickEvent }}');"><i class="{{ sns.icon }} icon-center"></i></a></li>
+                        {% if isFirst %}
+                        <li><font color="#FF6D70"> | </font></li>
+                        {% assign isFirst = false %}
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </p><br>
+                </div>
+            </div>
+            <p class="heart text-center"><i class="icon-heart2"></i></p>
+            <div class="couple-half">
+                <div class="bride photo-viewer" data-image="{{ information.bride.originalImage }}" data-width="{{ information.bride.imageWidth }}" data-height="{{ information.bride.imageHeight }}">
+                    <img src="{{ information.bride.thumbnail }}" alt="bride"
+                         class="img-responsive">
+                </div>
+                <div class="desc-bride">
+                    <h3>{{ information.bride.eng }}</h3>
+                    <p><b>{{ information.bride.parents }}</b>의 사랑스러운 딸 <b>   {{ information.bride.name }}</b>
+                    <ul class="fh5co-social-icons">
+                        {% assign isFirst = true %}
+                        {% for sns in information.bride.snses %}
+                        <li><a href="{{ sns.link }}" onclick="onClickGAEvent('sns','{{ sns.clickEvent }}');"><i class="{{ sns.icon }} icon-center"></i></a></li>
+                        {% if isFirst %}
+                        <li><font color="#FF6D70"> | </font></li>
+                        {% assign isFirst = false %}
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

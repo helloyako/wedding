@@ -1,0 +1,242 @@
+{% assign invitation = site.data.invitation %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ invitation.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="{{ invitation.title }}"/>
+    <meta property="og:image" content="{{ invitation.ogImageUrl }}"/>
+    <meta property="og:url" content="{{ invitation.ogLinkUrl }}"/>
+    <meta property="og:site_name" content="{{ invitation.title }}"/>
+    <meta property="og:description" content="{{ invitation.ogDescription }}"/>
+
+    {% if invitation.ga.trackingId %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ invitation.trackingId }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        {{ site.ga.trackingId }}
+        gtag('config', '{{ invitation.trackingId }}');
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ invitation.trackingId }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    {% endif %}
+
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+          type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+    <!--    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">-->
+    <link rel="shortcut icon" href="images/favicon_1.ico"/>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- phothoswipe -->
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="photoswipe/photoswipe.css">
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+         In the folder of skin CSS file there are also:
+         - .png and .svg icons sprite,
+         - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css">
+
+    <!-- Core JS file -->
+    <script src="photoswipe/photoswipe.min.js"></script>
+
+    <!-- UI JS file -->
+    <script src="photoswipe/photoswipe-ui-default.min.js"></script>
+    <!-- phothoswipe end -->
+
+    {% if site.data.map.ncpClientId %}
+    <script type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId={{ site.data.map.ncpClientId }}"></script>
+    {% endif %}
+
+    <script>
+        function onClickGAEvent(category, label) {
+            {% if invitation.ga.trackingId %}
+            ga('send', 'event', {
+                eventCategory: category,
+                eventAction: 'click',
+                eventLabel: label
+            });
+            {% endif %}
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="fh5co-loader"></div>
+<div id="page">
+
+
+    {% include invitationHeader.html %}
+
+    {% include information.html %}
+
+    {% include story.html %}
+
+    {% include gallery.html %}
+
+    {% include map.html %}
+
+    {% include direction.html %}
+
+    {% include pay.html %}
+
+    {% include footer.html %}
+
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!--                <button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>-->
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+
+<!-- Stellar -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+
+<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+<script src="js/simplyCountdown.js"></script>
+<!-- Main -->
+<!-- <script src="js/main.js"></script> -->
+{% include mainScript.html %}
+
+</body>
+</html>
+

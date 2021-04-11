@@ -1,0 +1,40 @@
+{% assign story = site.data.story %}
+{% if story %}
+<div id="fh5co-couple-story">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                <span>We Love Each Other</span>
+                <h2>Our Story</h2>
+                <p>{{ story.description }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+                <ul class="timeline animate-box">
+                    {% assign isLeft = false %}
+                    {% for story in story.stories %}
+                    <li class="{% if isLeft %}timeline-inverted {% endif %}animate-box">
+                        <div class="timeline-badge photo-viewer" style="background-image:url({{ story.thumbnail }});" data-image="{{ story.originalImage }}" data-width="{{ story.imageWidth }}" data-height="{{ story.imageHeight }}"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="timeline-title">{{ story.title }}</h3>
+                                <span class="date">{{ story.date }}</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p> {{ story.description }} </p>
+                            </div>
+                        </div>
+                    </li>
+                    {% if isLeft %}
+                    {% assign isLeft = false %}
+                    {% else %}
+                    {% assign isLeft = true %}
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

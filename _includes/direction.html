@@ -1,0 +1,16 @@
+{% assign direction = site.data.direction %}
+{% if direction %}
+<div id="fh5co-direction" class="fh5co-section-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                <h3><b>{{ direction.name }}</b> </h3>
+                    {{ direction.address }} {% if direction.link %}<a href="{{ direction.link }}" onclick="onClickGAEvent('map','{{ direction.clickEvent }}');">길찾기</a>{% endif %}<br><br>
+                <h4>오시는 길</h4>
+                {{ direction.howToCome }}
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

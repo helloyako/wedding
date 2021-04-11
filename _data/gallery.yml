@@ -1,0 +1,322 @@
+galleries:
+  - id: "wedding-gallery"
+    title: "웨딩 갤러리"
+    representImage: "images/wedding/wedding_gif.gif"
+    images:
+      - image: "images/wedding/wedding_0.jpg"
+        width: 1280
+        height: 853
+      - image: "images/wedding/wedding_1.jpg"
+        width: 1280
+        height: 853
+      - image: "images/wedding/wedding_2.jpg"
+        width: 1280
+        height: 853
+      - image: "images/wedding/wedding_3.jpg"
+        width: 853
+        height: 1280
+      - image: "images/wedding/wedding_4.jpg"
+        width: 1280
+        height: 853
+      - image: "images/wedding/wedding_6.jpg"
+        width: 2000
+        height: 1334
+      - image: "images/wedding/wedding_7.jpg"
+        width: 2000
+        height: 1334
+      - image: "images/wedding/wedding_8.jpg"
+        width: 2000
+        height: 1334
+      - image: "images/wedding/wedding_9.jpg"
+        width: 2000
+        height: 1334
+      - image: "images/wedding/wedding_10.jpg"
+        width: 2000
+        height: 1334
+      - image: "images/wedding/wedding_5.jpg"
+        width: 1280
+        height: 853
+  - id: "laos-gallery"
+    title: "액티비티 가득, 라오스"
+    representImage: "images/laos/laos_cover.gif"
+    images:
+      - image: "images/laos/laos_2.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_3.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_4.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/laos/laos_5.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_6.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/laos/laos_7.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/laos/laos_8.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/laos/laos_9.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/laos/laos_10.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_11.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_12.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_13.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_14.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_15.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/laos/laos_16.jpg"
+        width: 1478
+        height: 1108
+  - id: "fin-gallery"
+    title: "새하얀 북유럽의 겨울"
+    representImage: "images/fin/fin_cover.gif"
+    images:
+      - image: "images/fin/fin_1.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/fin/fin_2.jpg"
+        width: 2048
+        height: 2019
+      - image: "images/fin/fin_3.jpg"
+        width: 2364
+        height: 1773
+      - image: "images/fin/fin_4.jpg"
+        width: 2048
+        height: 1994
+      - image: "images/fin/fin_5.jpg"
+        width: 1108
+        height: 1109
+      - image: "images/fin/fin_6.jpg"
+        width: 1477
+        height: 1108
+      - image: "images/fin/fin_7.jpg"
+        width: 1773
+        height: 2364
+      - image: "images/fin/fin_8.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/fin/fin_9.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/fin/fin_10.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/fin/fin_11.jpg"
+        width: 1108
+        height: 1402
+      - image: "images/fin/fin_12.jpg"
+        width: 1773
+        height: 2259
+      - image: "images/fin/fin_13.jpg"
+        width: 1773
+        height: 1773
+      - image: "images/fin/fin_14.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/fin/fin_15.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/fin/fin_16.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/fin/fin_17.jpg"
+        width: 1974
+        height: 2048
+      - image: "images/fin/fin_18.jpg"
+        width: 1936
+        height: 1936
+      - image: "images/fin/fin_19.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/fin/fin_20.jpg"
+        width: 1108
+        height: 1108
+      - image: "images/fin/fin_21.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/fin/fin_22.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/fin/fin_23.jpg"
+        width: 2364
+        height: 1773
+      - image: "images/fin/fin_24.jpg"
+        width: 1108
+        height: 1108
+      - image: "images/fin/fin_25.jpg"
+        width: 1773
+        height: 2364
+      - image: "images/fin/fin_26.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/fin/fin_27.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/fin/fin_28.jpg"
+        width: 2364
+        height: 1773
+      - image: "images/fin/fin_29.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/fin/fin_30.jpg"
+        width: 1280
+        height: 1280
+  - id: "vv-gallery"
+    title: "1주년, 블라디보스토크"
+    representImage: "images/vv/vv_cover.gif"
+    images:
+      - image: "images/vv/vv_1.jpg"
+        width: 1536
+        height: 1536
+      - image: "images/vv/vv_2.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/vv/vv_3.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/vv/vv_4.jpg"
+        width: 1536
+        height: 1536
+      - image: "images/vv/vv_5.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/vv/vv_6.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/vv/vv_7.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/vv/vv_8.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/vv/vv_9.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/vv/vv_10.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/vv/vv_11.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/vv/vv_12.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/vv/vv_13.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/vv/vv_14.jpg"
+        width: 1536
+        height: 1536
+      - image: "images/vv/vv_15.jpg"
+        width: 2048
+        height: 2048
+      - image: "images/vv/vv_16.jpg"
+        width: 2048
+        height: 1969
+  - id: "tw-gallery"
+    title: "하루종일 대만걷기"
+    representImage: "images/tw/tw_cover.gif"
+    images:
+      - image: "images/tw/tw_1.jpg"
+        width: 1528
+        height: 994
+      - image: "images/tw/tw_2.jpg"
+        width: 1478
+        height: 1012
+      - image: "images/tw/tw_3.jpg"
+        width: 1478
+        height: 1012
+      - image: "images/tw/tw_4.jpg"
+        width: 1280
+        height: 1280
+      - image: "images/tw/tw_5.jpg"
+        width: 1280
+        height: 960
+      - image: "images/tw/tw_6.jpg"
+        width: 1280
+        height: 1280
+      - image: "images/tw/tw_7.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/tw/tw_8.jpg"
+        width: 960
+        height: 1280
+      - image: "images/tw/tw_9.jpg"
+        width: 1110
+        height: 1476
+      - image: "images/tw/tw_10.jpg"
+        width: 1280
+        height: 960
+      - image: "images/tw/tw_11.jpg"
+        width: 1280
+        height: 1280
+      - image: "images/tw/tw_12.jpg"
+        width: 1478
+        height: 1012
+      - image: "images/tw/tw_13.jpg"
+        width: 1280
+        height: 960
+  - id: "hk-gallery"
+    title: "어느주말 홍콩"
+    representImage: "images/hk/hk_cover.gif"
+    images:
+      - image: "images/hk/hk_1.jpg"
+        width: 960
+        height: 1117
+      - image: "images/hk/hk_2.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/hk/hk_3.jpg"
+        width: 1280
+        height: 1280
+      - image: "images/hk/hk_3-1.jpg"
+        width: 1053
+        height: 960
+      - image: "images/hk/hk_4.jpg"
+        width: 960
+        height: 1185
+      - image: "images/hk/hk_5.jpg"
+        width: 960
+        height: 1280
+      - image: "images/hk/hk_6.jpg"
+        width: 960
+        height: 1280
+      - image: "images/hk/hk_7.jpg"
+        width: 1280
+        height: 960
+      - image: "images/hk/hk_8.jpg"
+        width: 960
+        height: 1200
+      - image: "images/hk/hk_9.jpg"
+        width: 1280
+        height: 1280
+      - image: "images/hk/hk_10.jpg"
+        width: 1478
+        height: 1108
+      - image: "images/hk/hk_11.jpg"
+        width: 1280
+        height: 1280
+      - image: "images/hk/hk_12.jpg"
+        width: 1108
+        height: 1478
+      - image: "images/hk/hk_13.jpg"
+        width: 1500
+        height: 1500

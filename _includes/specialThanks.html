@@ -1,0 +1,36 @@
+{% assign specialThanks = site.data.specialThanks %}
+{% if specialThanks %}
+<div id="fh5co-special-thanks">
+    <div class="container">
+        <div class="row">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <span>Special thanks</span>
+                    <h2>Thank you for all your help</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 animate-box">
+                    <div class="wrap-special-thanks">
+                        <div id="special-thanks-items" class="owl-carousel-fullwidth">
+                            {% for person in specialThanks.people %}
+                            <div class="item">
+                                <div class="special-thanks-slide active text-center">
+                                    <figure>
+                                        <img src="{{ person.image }}" alt="{{ person.alt }}">
+                                    </figure>
+                                    <span>{{ person.title }}<br><span class="bio">{{ person.secondTitle }}</span></span>
+                                    <blockquote>
+                                        <p>{{ person.description }}</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

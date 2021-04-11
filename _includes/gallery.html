@@ -1,0 +1,30 @@
+{% assign gallery = site.data.gallery %}
+{% if gallery %}
+<div id="fh5co-gallery" class="fh5co-section-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                <span>Our Memories</span>
+                <h2>Wedding Gallery</h2>
+            </div>
+        </div>
+        <div class="row row-bottom-padded-md">
+            <div class="col-md-12">
+                <ul id="fh5co-gallery-list">
+                    {% for gallery in gallery.galleries %}
+                    <li id="{{ gallery.id }}" class="one-third animate-box" data-animate-effect="fadeIn"
+                        style="background-image: url({{ gallery.representImage }}); ">
+                        <a href="#">
+                            <div class="case-studies-summary">
+                                <span>{{ gallery.images.size }} Photo</span>
+                                <h2>{{ gallery.title }}</h2>
+                            </div>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
